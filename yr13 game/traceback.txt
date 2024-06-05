@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/combat2.rpy", line 48, in script
+    $ heal_hp += 1
+  File "game/combat2.rpy", line 48, in <module>
+    $ heal_hp += 1
+NameError: name 'heal_hp' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/combat2.rpy", line 48, in script
+    $ heal_hp += 1
+  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/combat2.rpy", line 48, in <module>
+    $ heal_hp += 1
+NameError: name 'heal_hp' is not defined
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.2.1.24030407
+yr13 game 1.0
+Tue Jun  4 12:57:22 2024
