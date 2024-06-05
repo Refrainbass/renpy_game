@@ -15,6 +15,7 @@ label scene_3:
                         "Go out and look around":
                                     show bg town1 with dissolve
                                     m "Time to look around"
+                                    "You see a old lady need help"
 
 
                         "Sit in room and wait for an hour":
