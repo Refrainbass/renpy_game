@@ -2,6 +2,17 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+define config.name = _('Journey')
+define gui.show_name = True
+define config.version = "1.0"
+define gui.about = _("Created by Setsu.S")
+
+define config.main_menu_music = "audio/mainland.mp3"
+define config.game_menu_music = "audio/mainland.mp3"
+define config.main_menu_music_fadein = 0.5
+
+
+
 
 define m = Character("Me", color="#0000FF")
 define parent = Character("Sister", color="#FFFF00")

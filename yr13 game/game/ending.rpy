@@ -64,3 +64,9 @@ label won_giga:
     
     return
     
+label ending_6:
+    show black
+    with fade
+    "You died"
+    "Ending ?: died"
+    return
