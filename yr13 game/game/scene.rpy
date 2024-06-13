@@ -225,10 +225,8 @@ label unsure:
 
 label continue_giga:
     g "Wise choice my brother"
-    g "Join the army my friend"
-    g "There are people who can help you inside"
-    g "Also"
     g "Do 100 push up , pull up and sit up everyday"
+    g "Get stronger"
     g "That will help you."
     g "Oh look like you about to wake up"
     g "See you again"

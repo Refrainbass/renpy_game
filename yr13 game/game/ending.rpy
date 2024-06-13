@@ -64,9 +64,16 @@ label won_giga:
     
     return
     
-label ending_6:
+label ending_5:
     show black
     with fade
     "You died"
     "Ending ?: died"
     return
+
+label ending_6:
+    "You delined her offer"
+    h "Alright then"
+    h "One day we will meet again"
+    hide hunter with dissolve
+    "You decided to stay here and get a job."
