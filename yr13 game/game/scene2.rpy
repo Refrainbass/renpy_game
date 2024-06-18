@@ -89,6 +89,9 @@ menu:
 label continue_ad:
             h "Alright"
             h "Let's go then"
+            h "What you want to do? Go to try to beat some mazes?"
+            h "There are some mazes with lot of treasures in it."
+            m "Yeah, let's go"
 
 
 
