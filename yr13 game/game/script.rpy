@@ -55,6 +55,10 @@ image bg white = "white.jpg"
 image bg black = "black.jpg"
 image bg town1 = "town1.jpg"
 image bg town2 = "town2.jpg"
+image bg 3years = "3years.png"
+image bg black = "black.jpg"
+image bg fastfood = "fastfood.png"
+
 
 # The game starts here.
 

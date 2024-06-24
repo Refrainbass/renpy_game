@@ -77,3 +77,17 @@ label ending_6:
     h "One day we will meet again"
     hide hunter with dissolve
     "You decided to stay here and get a job."
+    show bg 3years with dissolve
+    show bg fastfood with dissolve
+    play music "audio/spring.mp3" volume 0.2 
+    m "Welcome"
+    m "Take away or eat here"
+    h "Hi we meet again"
+    "You heared a familiar voice"
+    show hunter at right with dissolve
+    m "Hi"
+    h "Hi"
+    h "Didn't think that you will get a job in a fast food place."
+    h "What happened"
+    m "I couldn't find a job that can feed myself"
+    m "This is the only way"
