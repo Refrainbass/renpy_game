@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 13, in script
-    define config.game_menu_music_fadein = 0.5
-  File "renpy/common/000namespaces.rpy", line 34, in set
-    setattr(self.nso, name, value)
-Exception: config.game_menu_music_fadein is not a known configuration variable.
+  File "game/script.rpy", line 22, in script
+    define maid = Charcater("Maid")
+  File "game/script.rpy", line 22, in <module>
+    define maid = Charcater("Maid")
+NameError: name 'Charcater' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 13, in script
-    define config.game_menu_music_fadein = 0.5
+  File "game/script.rpy", line 22, in script
+    define maid = Charcater("Maid")
   File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 2219, in execute
     self.set()
-  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 2237, in set
-    ns.set(self.varname, value)
-  File "renpy/common/000namespaces.rpy", line 34, in set
-    setattr(self.nso, name, value)
-  File "C:\renpy-8.2.1-sdk\renpy\defaultstore.py", line 101, in __setattr__
-    raise Exception('config.%s is not a known configuration variable.' % (name))
-Exception: config.game_menu_music_fadein is not a known configuration variable.
+  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 2233, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 22, in <module>
+    define maid = Charcater("Maid")
+NameError: name 'Charcater' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
 Journey 1.0
-Tue Jun 11 12:19:24 2024
+Wed Jun 26 10:19:29 2024

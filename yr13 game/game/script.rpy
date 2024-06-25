@@ -19,6 +19,8 @@ define parent = Character("Sister", color="#FFFF00")
 define h = Character("Hunter", color="#028A0F")
 define g = Character("Giga Chad", color="#FFD700")
 define who = Character("?")
+define maid = Character("Maid", color="#ADD8E6")
+define alice = Character("Alice", color="#ADD8E6")
 image giga = "giga.png"
 image sister = "sister.png"
 image white = "#FFFFFF"
@@ -58,6 +60,7 @@ image bg town2 = "town2.jpg"
 image bg 3years = "3years.png"
 image bg black = "black.jpg"
 image bg fastfood = "fastfood.png"
+image maidi = "maid.png"
 
 
 # The game starts here.

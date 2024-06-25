@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/ending.rpy", line 82: expected end of line
-    play music "audio/spring.mp3" volume 0.2 with fade
-                                             ^
+File "game/script.rpy", line 22: invalid syntax
+    Character("Maid" color="#ADD8E6")
+                      ^
+
+File "game/script.rpy", line 23: invalid syntax
+    Character("Alice" color="#ADD8E6")
+                       ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Jun 25 09:10:34 2024
+Wed Jun 26 10:39:31 2024
