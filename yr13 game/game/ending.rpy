@@ -113,4 +113,12 @@ label ending_6:
     h "Alice?"
     m "Oh, that just her name."
     m "And she just keep thinking that she need to protect me from dangers."
+    h "fair enough"
+    m "What's your next plan?"
+    h "Just came to have a look, I am leaving tomrrow."
+    m "Alright, any plans next?"
+    h "Not really , I guess I just continue on my adventure."
+    m "Alright then"
+    return
+
 
