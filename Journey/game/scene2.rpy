@@ -92,6 +92,9 @@ label continue_ad:
             h "What you want to do? Go to try to beat some mazes?"
             h "There are some mazes with lot of treasures in it."
             m "Yeah, let's go"
+            hide hunter
+            show bg black with fade
+            "You continued your journey again."
 
 
 
