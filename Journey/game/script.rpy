@@ -2,9 +2,9 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define config.name = _('Journey')
+define config.name = _('The Chosen One')
 define gui.show_name = True
-define config.version = "1.0"
+define config.version = "1.1"
 define gui.about = _("Created by Setsu.S")
 
 define config.main_menu_music = "audio/mainland.mp3"

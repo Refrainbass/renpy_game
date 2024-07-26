@@ -61,6 +61,7 @@ label scene_4:
                         "Just apologise and leave.":
                                     m "Sorry, wrong person"
                                     girl "Don't waste my time"
+                                    hide girl with dissolve
                                     "She walked away"
 
 "You look at the clock tower and it is nearly the meet up time"
