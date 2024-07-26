@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "yr13game"
+define build.name = "Journey"
 
 
 ## Sounds and music ############################################################
@@ -207,3 +207,5 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+define build.itch_project = "gambleforlife/Journey"
