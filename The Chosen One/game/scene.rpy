@@ -5,7 +5,7 @@ label forest_1:
     m "Wait What are you talking about"
     h "Why I have to do all the dirty work?"
     m "Hold up"
-    "The hunter clearly didn't care and pulling out her sword"
+    "The hunter clearly didn't care and started pulling out her sword"
     jump combat_start
 
 label scene_2:
@@ -13,7 +13,7 @@ label scene_2:
     with fade
     stop music fadeout 0.2
     play music "audio/mainland.mp3" volume 0.5
-    h "Who are you? Why you are so strong"
+    h "Who even are you? Why you are so strong"
     
     menu:
         "Tell the truth":
@@ -22,8 +22,8 @@ label scene_2:
             m "I am here for some reason"
 
         "Lie":
-            m "I got lost in the forest"
-            h "Getting lost in middle of the battle, it can't be true"
+            m "I got lost in the forest when I was hunting."
+            h "Getting lost? In this kind of time? it can't be true"
             "Proceed to pull out her sword"
             jump ending_3
 
@@ -31,7 +31,7 @@ label scene_2:
     "She stopped and think for a while..."
     "..."
     "..."
-    h "Whatever, it doesn't matter anyway"
+    h "Whatever, it doesn't matter now."
     h "I can guide you to the nearby town"
     h "Do you want to come along?"
     

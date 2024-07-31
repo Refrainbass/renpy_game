@@ -4,7 +4,7 @@
 # name of the character.
 define config.name = _('The Chosen One')
 define gui.show_name = True
-define config.version = "1.2"
+define config.version = "1.3"
 define gui.about = _("Created by Setsu.S")
 
 define config.main_menu_music = "audio/mainland.mp3"

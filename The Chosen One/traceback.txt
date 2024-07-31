@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 22, in script
-    define maid = Charcater("Maid")
-  File "game/script.rpy", line 22, in <module>
-    define maid = Charcater("Maid")
-NameError: name 'Charcater' is not defined
+  File "game/scene3.rpy", line 4, in script
+    show bg dark forest with fadeout
+  File "game/scene3.rpy", line 4, in <module>
+    show bg dark forest with fadeout
+NameError: name 'fadeout' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 22, in script
-    define maid = Charcater("Maid")
-  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 2219, in execute
-    self.set()
-  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 2233, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "game/scene3.rpy", line 4, in script
+    show bg dark forest with fadeout
+  File "C:\renpy-8.2.1-sdk\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "C:\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "C:\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 22, in <module>
-    define maid = Charcater("Maid")
-NameError: name 'Charcater' is not defined
+  File "game/scene3.rpy", line 4, in <module>
+    show bg dark forest with fadeout
+NameError: name 'fadeout' is not defined
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.1.24030407
-Journey 1.0
-Wed Jun 26 10:19:29 2024
+The Chosen One 1.2
+Wed Jul 31 13:09:43 2024

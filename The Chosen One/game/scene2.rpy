@@ -90,12 +90,12 @@ menu:
 label continue_ad:
             h "Alright"
             h "Let's go then"
-            h "What you want to do? Go to try to beat some mazes?"
-            h "There are some mazes with lot of treasures in it."
-            m "Yeah, let's go"
-            hide hunter
-            show bg black with fade
-            "You continued your journey again."
+            h "What you want to do? Go to try to beat some dungeons?"
+            h "There are some dungeons with lot of treasures in it."
+            h "I mean like you can decide what you want to do on the way anyway."
+            h "It going to take quite a while to get to the next town."
+            "You and hunter started another Journey again."
+            jump adventure_1
 
 
 

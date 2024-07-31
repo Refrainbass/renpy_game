@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 22: invalid syntax
-    Character("Maid" color="#ADD8E6")
-                      ^
-
-File "game/script.rpy", line 23: invalid syntax
-    Character("Alice" color="#ADD8E6")
-                       ^
+File "game/scene3.rpy", line 13: choice menuitem expects a non-empty block.
+    "What is a T5 dungeon?":
+                            ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Jun 26 10:39:31 2024
+Wed Jul 31 13:18:12 2024
