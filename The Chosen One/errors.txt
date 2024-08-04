@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene3.rpy", line 13: choice menuitem expects a non-empty block.
-    "What is a T5 dungeon?":
-                            ^
+File "game/scene3.rpy", line 9: play requires a channel
+    play "audio/moonlight.mp3"
+         ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Wed Jul 31 13:18:12 2024
+Mon Aug  5 09:18:28 2024
