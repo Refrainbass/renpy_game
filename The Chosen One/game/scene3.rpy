@@ -50,7 +50,13 @@ h "I guess we have no choice but fight"
 jump combat_3
 
 label beatwolf:
+      hide wolf with fade
       h "That's was easy."
+      m "Nah It was not easy, let me catch my breath for a bit."
+      h "Yeah that is a good idea"
+      h "It is getting late as well"
+      h "We probably find a place to camp nearby to get through the night and continue tomorrow."
+      h "There is a place overthere, let's camp there."
 
 
   

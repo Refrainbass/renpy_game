@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene3.rpy", line 9: play requires a channel
-    play "audio/moonlight.mp3"
-         ^
+File "game/combat3.rpy", line 4: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    label dice_roll3:
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Aug  5 09:18:28 2024
+Tue Aug  6 10:18:43 2024

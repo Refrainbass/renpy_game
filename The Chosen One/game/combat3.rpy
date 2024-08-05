@@ -1,5 +1,5 @@
 label combat_3:
-
+    
     label dice_roll3:
     $ d2 = renpy.random.randint(1,2)
     $ d4 = renpy.random.randint(1,4)
@@ -8,9 +8,8 @@ label combat_3:
     $ d20 = renpy.random.randint(1,20)
     $ d30 = renpy.random.randint(2,6)
 
-show bg dark forest with dissolve
-show hunter at left
-show wolf at right
+show hunter at left 
+show wolf at right with fade
 stop music fadeout 0.2
 play music "audio/combat.mp3" volume 0.5
 
@@ -18,11 +17,11 @@ play music "audio/combat.mp3" volume 0.5
 
 
 # Player Stats
-$ player_max_hp = 45
+$ player_max_hp = 70
 $ player_hp = player_max_hp
 
 #Enemy  Stats
-$ enemy_max_hp = 160
+$ enemy_max_hp = 100
 $ enemy_hp = enemy_max_hp
 
 "Enemy hp is [enemy_max_hp]"
@@ -79,6 +78,13 @@ while player_hp > 0:
                     elif random3 == 4:
                         $ player_hp -= 6
                         "Took 4 damage for attacking too hard!"
+                "Epic Attack":
+                    if d20 >= 10:
+                        $ player_attack_value = 30
+                        $ enemy_hp -= player_attack_value
+                        "The enemy took [player_attack_value] damage and now at [enemy_hp]"
+                    elif d20 <= 10:
+                        "Nothing happened"
 
 
 
@@ -100,7 +106,21 @@ while player_hp > 0:
             "Enemy hit player for [7] damage and now you have [player_hp]"
         elif random3 == 4:
             $ player_hp -= 8
-            "Enemy hit player for [8] damage and now you have [player_hp]"    
+            "Enemy hit player for [8] damage and now you have [player_hp]"   
+
+    if player_hp <= 10:
+        menu:
+            "Healing" :
+                $ player_hp += 10
+                "You healed for 10 hp and now have [player_hp]"
+            "Risky large healing ":
+                if d20 <= 15:
+                    $ player_hp -= 20
+                    "Failed healing -20 health, now you are at [player_hp]"
+                if d20 >= 15:
+                    $ player_hp += 20
+                    "You healed for 20 hp and now have [player_hp]"
+
 
     if enemy_hp <= 0:
         jump beatwolf
