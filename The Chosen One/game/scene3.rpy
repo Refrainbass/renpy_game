@@ -49,14 +49,25 @@ h "This is normal, forest always full of unexpected monsters. "
 h "I guess we have no choice but fight"
 jump combat_3
 
+image bg campfire = "campfire.png"
 label beatwolf:
       hide wolf with fade
+      play music "audio/moonlight.mp3"
       h "That's was easy."
       m "Nah It was not easy, let me catch my breath for a bit."
       h "Yeah that is a good idea"
       h "It is getting late as well"
       h "We probably find a place to camp nearby to get through the night and continue tomorrow."
       h "There is a place overthere, let's camp there."
+      show bg campfire with fade 
+      show hunter at right
+      h "Have a good rest and we begin our journey again tomorrow."
+      m "Is that safe to rest in places like this?"
+      h "I did check around this place and I don't think there is any monsters nearby."
+      h "Even if there is , I will deal with it."
+      m "Alright then"
+
+
 
 
   
