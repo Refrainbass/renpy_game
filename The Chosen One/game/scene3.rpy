@@ -7,7 +7,7 @@ label adventure_1:
 
       show bg dark forest with fade
       stop music fadeout 0.2
-      play music "audio/moonlight.mp3" volume 5.0
+      play music "audio/moonlight.mp3" volume 10.0
       show hunter at right 
       m "Where exactly we are going?"
       h "We are going to a city call Lafu, a city with many dungeons nearby."
@@ -50,6 +50,8 @@ h "I guess we have no choice but fight"
 jump combat_3
 
 image bg campfire = "campfire.png"
+image monster = "monster.png"
+define monster = Character("A̵̡̱̠͕̖̰̻͌͌̾͒͋s̸̖̎̆̑̽̒͌̈̽͌̕ȧ̴̛̮̭̓͗́̋̈͝n̷̡̤̣̘͙̩̳̠͐̊̎̎̚̚̕ã̴̙͓̠̲̪̜̿̎̅̈́̕͜͝͠ḧ̴͇͕͖̬͎̝̳̹̒́̅̑̿̌̈́͊̕k̶̛̭̗̬̹̖̐́͐ç̵̗̙͎͑͂̀̈́̈́", color="#FF0000")
 label beatwolf:
       hide wolf with fade
       play music "audio/moonlight.mp3"
@@ -60,12 +62,43 @@ label beatwolf:
       h "We probably find a place to camp nearby to get through the night and continue tomorrow."
       h "There is a place overthere, let's camp there."
       show bg campfire with fade 
-      show hunter at right
       h "Have a good rest and we begin our journey again tomorrow."
       m "Is that safe to rest in places like this?"
       h "I did check around this place and I don't think there is any monsters nearby."
       h "Even if there is , I will deal with it."
       m "Alright then"
+      hide hunter
+      stop music fadeout 0.5
+      show bg black with fade 
+      "You fell asleep"
+      play sound "audio/wind.mp3" volume 0.75
+      "..."
+      "..." 
+      "Can't sleep well with the amount of wind"
+      "You wake up"
+      jump monster_start
+
+label monster_start:
+            show bg campfire with dissolve
+            "You don't see her"
+            "She is not around"
+            "You get up to see where she at."
+            "You see a shadow "
+            "But that's not what you excepted"
+            show bg black 
+            show monster  with fade
+            monster "Your time is up"
+
+default _quit_slot = "noquit"
+$ renpy.quit(status=0, save=True)
+$ renpy.load("noquit")
+
+
+      
+
+
+
+
 
 
 

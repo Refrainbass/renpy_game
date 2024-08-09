@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/combat3.rpy", line 4: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    label dice_roll3:
-    ^
+File "game/scene3.rpy", line 88: expected statement.
+    _quit_slot = "1"
+               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Aug  6 10:18:43 2024
+Fri Aug  9 14:49:07 2024
