@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scene3.rpy", line 88: expected statement.
-    _quit_slot = "1"
-               ^
+File "game/combat4.rpy", line 147: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+            g "It's your show time.
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Aug  9 14:49:07 2024
+Tue Aug 13 09:39:18 2024

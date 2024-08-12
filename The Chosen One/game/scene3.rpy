@@ -76,8 +76,9 @@ label beatwolf:
       "..." 
       "Can't sleep well with the amount of wind"
       "You wake up"
-      jump monster_start
+      jump monster_start      
 
+image smolgiga = "smolgiga.png" 
 label monster_start:
             show bg campfire with dissolve
             "You don't see her"
@@ -88,10 +89,29 @@ label monster_start:
             show bg black 
             show monster  with fade
             monster "Your time is up"
+            monster "You need to pay for what you have done"
+            g "No No No , Not so quick."
+            monster "Who even are you"
+            g "Well"
+            play music "audio/gigachad.mp3"
+            show monster at left
+            show smolgiga at right with fade 
+            m "OMG is you chad"
+            g "Well we meet again"
+            m "Why you are smol chad now"
+            g "Well, I lost some of my power in the last fight with 'you'."
+            m "ME?"
+            g "You know who I am talking to."
+            g "Shall we begin?"
+            g "This will be a tough fight"
+            jump combat_4
 
-default _quit_slot = "noquit"
-$ renpy.quit(status=0, save=True)
-$ renpy.load("noquit")
+label beat_monster:
+      
+
+
+           
+
 
 
       
