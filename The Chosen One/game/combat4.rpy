@@ -9,7 +9,7 @@ label combat_4:
     $ d30 = renpy.random.randint(2,6)
 
 stop music fadeout 0.2
-play music "audio/combat.mp3" volume 0.5
+play music "audio/combat.mp3" volume 0.3
 
 
 
@@ -81,7 +81,7 @@ while player_hp > 0:
                         $ player_hp -= 6
                         "Took 4 damage for flexing too hard!"
                 "Front double biceps":
-                    if d20 >= 10:
+                    if d20 >= 15:
                         $ player_attack_value = 999
                         $ enemy_hp -= player_attack_value
                         "The enemy took [player_attack_value] damage and now at [enemy_hp]"
@@ -110,24 +110,51 @@ while player_hp > 0:
             $ player_hp -= 81
             "Enemy hit player for [81] damage and now you have [player_hp]"   
 
-    if player_hp <= 200:
-        menu:
-            "Healing" :
-                $ player_hp += 16
-                "You healed for 16 hp and now have [player_hp]"
-            "Risky large healing ":
-                if d20 <= 15:
-                    $ player_hp -= 99
-                    "Failed healing -99 health, now you are at [player_hp]"
-                if d20 >= 15:
-                    $ player_hp += 20
-                    "You healed for 20 hp and now have [player_hp]"
 
 
-    if enemy_hp <= 0:
-        jump beatwolf
+
+    
         
-        
+    image smol_ame:
+        "smol_ame/out-transparent-35-0.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-1.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-2.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-3.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-4.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-5.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-6.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-7.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-8.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-9.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-10.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-11.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-12.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-13.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-14.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-15.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-16.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-17.png"
+        pause 0.1
+        "smol_ame/out-transparent-35-18.png"
+        pause 0.1
+        repeat
 
     if player_hp <= 0:
         stop music fadeout 0.2
@@ -138,16 +165,21 @@ while player_hp > 0:
         "Ending 2: Death"
         return
 
-    image smol_ame = Movie(play = "image/smolame.mp4")
-
     
-    if enemy_hp <= 5500:
+    
+    if enemy_hp <= 7000:
         jump smol_ameroll
 
-    label smol_ameroll:
-        g "Nah this is taking too long."
-        g "It's your show time."
-        show smol_ame 
+label smol_ameroll:
+    g "Nah this is taking too long."
+    g "It's your show time."
+    show smol_ame 
+    "She ground pound your mum."
+    hide monster with fade
+    $ player_hp -= 999999
+    $ enemy_hp -= 999999
+    "Both of you are seriously damaged by smol ame."
+    
         
     
         
