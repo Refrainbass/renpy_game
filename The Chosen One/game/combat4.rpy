@@ -67,25 +67,25 @@ while player_hp > 0:
                
                 "Lat spread":
                     if random4 == 1:
-                        $ player_attack_value = 5
+                        $ player_attack_value = 50
                         $ enemy_hp -= player_attack_value
                         "The enemy took [player_attack_value] damage and now at [enemy_hp]"
                     elif random4 == 2:
-                        $ player_attack_value = 6
+                        $ player_attack_value = 60
                         $ enemy_hp -= player_attack_value
                         "The enemy took [player_attack_value] damage and now at [enemy_hp]"
                     elif random4 == 3:
-                        $ player_hp -= 5
-                        "Took 5 damage for flexing too hard!"
+                        $ player_hp -= 50
+                        "Took 50 damage for flexing too hard!"
                     elif random4 == 4:
-                        $ player_hp -= 6
-                        "Took 4 damage for flexing too hard!"
+                        $ player_hp -= 60
+                        "Took 60 damage for flexing too hard!"
                 "Front double biceps":
                     if d20 >= 15:
                         $ player_attack_value = 999
                         $ enemy_hp -= player_attack_value
                         "The enemy took [player_attack_value] damage and now at [enemy_hp]"
-                    elif d20 <= 10:
+                    elif d20 <= 15:
                         "Nothing happened, I guess he like the moon pose more."
 
 
@@ -167,18 +167,34 @@ while player_hp > 0:
 
     
     
-    if enemy_hp <= 7000:
+    if enemy_hp <= 8700:
         jump smol_ameroll
 
 label smol_ameroll:
     g "Nah this is taking too long."
+    stop music fadeout 0.2
+    play music "audio/amebgm.mp3"
     g "It's your show time."
-    show smol_ame 
+    show smol_ame with moveintop
+    play sound "audio/ame.mp3"
     "She ground pound your mum."
-    hide monster with fade
+    "But you win so it doesn't matter"
+    hide monster with moveoutbottom
+    monster "I will be back...."
     $ player_hp -= 999999
     $ enemy_hp -= 999999
     "Both of you are seriously damaged by smol ame."
+    g "Ok I guess it is gone now."
+    g "Time to go."
+    g "Let's go smol ame"
+    play sound "audio/ame.mp3"
+    hide smol_ame with moveoutleft 
+    g "Well, time is up."
+    g "We will meet again."
+    hide smolgiga with moveouttop 
+    "The heros went back to where they belong."
+    
+
     
         
     

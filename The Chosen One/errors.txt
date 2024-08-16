@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/combat4.rpy", line 147: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            g "It's your show time.
+File "game/combat4.rpy", line 191: end of line expected.
+    hide smol_ame with moveoutleft 0.9
+                                   ^
+
+File "game/combat4.rpy", line 194: end of line expected.
+    hide smolgiga with moveouttop 0.6
+                                  ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Aug 13 09:39:18 2024
+Fri Aug 16 13:01:29 2024
