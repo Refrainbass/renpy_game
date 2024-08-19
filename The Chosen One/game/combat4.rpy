@@ -193,6 +193,8 @@ label smol_ameroll:
     g "We will meet again."
     hide smolgiga with moveouttop 
     "The heros went back to where they belong."
+    jump continue_3
+
     
 
     

@@ -106,7 +106,49 @@ label monster_start:
             g "This will be a tough fight"
             jump combat_4
 
-label beat_monster:
+image wood = "wood.png"
+label continue_3:
+      show bg campfire with dissolve
+      stop music fadeout 0.5
+      play music "audio/moonlight.mp3"
+      "You opened your eyes and end up in the same place."
+      "Same campfire."
+      "You got up and want to see where she is."
+      "Still don't see her"
+      m "What should I do now?"
+      h "What are you doing?"
+      show hunter at left with moveinleft 
+      m "Where did you go?"
+      h "Just got some wood for the fire."
+      show wood at center
+      "The wood just spawned in from middle of no where."
+      h "What happened?"
+      m "Just had a bad dream."
+      "She threw the wood into the fire."
+      hide wood with moveouttop
+      h "We are leaving when the sun raises."
+      h "I am going to take a nap."
+      h "It is your turn to guard, even though you are very weak."
+      h "I will help you if anything happen."
+      m "Alright."
+      hide hunter with moveoutleft
+      
+      "What shoud I do now?"
+      menu:
+            "Just stare at nothing.":
+                  jump continue_4
+            "Do the tasks which Chad gave you.":
+                  jump workout
+                  
+label continue_4:
+      show bg dark forest with fade
+      h "Time to go."
+      show hunter with moveinleft
+      h "It only going to take us about 2-3 hours to get to Lafu."
+
+
+
+
       
 
 

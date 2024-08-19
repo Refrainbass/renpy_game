@@ -33,6 +33,10 @@ label scene_2:
     "..."
     h "Whatever, it doesn't matter now."
     h "I can guide you to the nearby town"
+    m "Who are you?"
+    h "We have no names."
+    m "I just call you hunter then, you look like a hunter."
+    h "Anything is fine"
     h "Do you want to come along?"
     
     menu:
