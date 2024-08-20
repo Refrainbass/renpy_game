@@ -140,11 +140,30 @@ label continue_3:
             "Do the tasks which Chad gave you.":
                   jump workout
                   
+image bg lafu = "lafu.png"
+image bg lafu_b = "lafu_bird.png"
 label continue_4:
+      stop music fadeout 0.5
+      play music "audio/mainland.mp3"
       show bg dark forest with fade
       h "Time to go."
       show hunter with moveinleft
       h "It only going to take us about 2-3 hours to get to Lafu."
+      m "Can't we just get a horse?"
+      h "No, that's not possible."
+      m "Why?"
+      h "The forest is full of monsters."
+      show bg forest with fade
+      h "Now we are back on the main road"
+      h "much safer than where we were."
+      m "Are we close?"
+      h "Probably like 15 more mintues"
+      hide hunter
+      show bg lafu with fade
+      show hunter at right
+      "Finally arrive at Lafu."
+      "This city is different from what you have seen before."
+      show bg lafu_b with fade
 
 
 
