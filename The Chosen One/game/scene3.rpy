@@ -142,6 +142,7 @@ label continue_3:
                   
 image bg lafu = "lafu.png"
 image bg lafu_b = "lafu_bird.png"
+image bg tbc = "tbc.png"
 label continue_4:
       stop music fadeout 0.5
       play music "audio/mainland.mp3"
@@ -163,7 +164,15 @@ label continue_4:
       show hunter at right
       "Finally arrive at Lafu."
       "This city is different from what you have seen before."
+      hide hunter
       show bg lafu_b with fade
+      "The technology is more advanced than any other cities."
+      "Advanture start here"
+      "What is waiting for them in Lafu?"
+      "Will they meet the girl again?"
+      "Find out next time."
+      show bg tbc with fade
+      "Click to end the game."
 
 
 
