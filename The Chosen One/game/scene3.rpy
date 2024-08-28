@@ -7,7 +7,7 @@ label adventure_1:
 
       show bg dark forest with fade
       stop music fadeout 0.2
-      play music "audio/moonlight.mp3" volume 10.0
+      play music "audio/moonlight.mp3" volume 1.5
       show hunter at right 
       m "Where exactly we are going?"
       h "We are going to a city call Lafu, a city with many dungeons nearby."
