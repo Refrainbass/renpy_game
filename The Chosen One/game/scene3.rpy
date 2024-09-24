@@ -7,7 +7,7 @@ label adventure_1:
 
       show bg dark forest with fade
       stop music fadeout 0.2
-      play music "audio/moonlight.mp3" volume 1.5
+      play music "audio/moonlight.mp3" volume 1.5 #music
       show hunter at right 
       m "Where exactly we are going?"
       h "We are going to a city call Lafu, a city with many dungeons nearby."
@@ -28,7 +28,7 @@ label adventure_1:
                               h "Yes, for fun and he did that on his own."
                               h "Usually a T5 need at least 5 people with very good teamwork to beat it. At that case can't even ensure getting out as a full squad."
                               jump continue_2
-
+#loop menu 
 
 
 label continue_2:
@@ -47,7 +47,7 @@ m "Why this dog so ugly"
 h "That's a wolf you idiot."
 h "This is normal, forest always full of unexpected monsters. "
 h "I guess we have no choice but fight"
-jump combat_3
+jump combat_3 #start of combat
 
 image bg campfire = "campfire.png"
 image monster = "monster.png"
@@ -104,7 +104,7 @@ label monster_start:
             g "You know who I am talking to."
             g "Shall we begin?"
             g "This will be a tough fight"
-            jump combat_4
+            jump combat_4 #start of combat
 
 image wood = "wood.png"
 label continue_3:

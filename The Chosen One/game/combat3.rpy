@@ -1,5 +1,5 @@
 label combat_3:
-    
+    #random values
     label dice_roll3:
     $ d2 = renpy.random.randint(1,2)
     $ d4 = renpy.random.randint(1,4)
@@ -7,7 +7,7 @@ label combat_3:
     $ d10 = renpy.random.randint(1,10)
     $ d20 = renpy.random.randint(1,20)
     $ d30 = renpy.random.randint(2,6)
-
+# show character and play battle music
 show hunter at left 
 show wolf at right with fade
 stop music fadeout 0.2
@@ -55,7 +55,7 @@ while player_hp > 0:
                         $ player_hp -= 4
                         "Took 4 damage for attacking too hard!"
             
-                
+            #player can attaack with hunter as well       
         "Hunter":
             menu:
                 "Light Attack":
@@ -93,7 +93,7 @@ while player_hp > 0:
        
            
 
-
+#enemy deal different damage to player 
     if player_hp >= 1:
         if random3 == 1:
             $ player_hp -= 5
@@ -107,7 +107,7 @@ while player_hp > 0:
         elif random3 == 4:
             $ player_hp -= 8
             "Enemy hit player for [8] damage and now you have [player_hp]"   
-
+#player can heal when they are less than 10 health
     if player_hp <= 10:
         menu:
             "Healing" :
@@ -121,12 +121,12 @@ while player_hp > 0:
                     $ player_hp += 20
                     "You healed for 20 hp and now have [player_hp]"
 
-
+#fight end when enemy die
     if enemy_hp <= 0:
         jump beatwolf
         
         
-
+#fight end when player die
     if player_hp <= 0:
         stop music fadeout 0.2
         show black 

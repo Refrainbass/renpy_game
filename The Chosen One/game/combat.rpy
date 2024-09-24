@@ -1,5 +1,6 @@
 label combat_start:
 
+    # dice random values
     label dice_roll:
     $ d2 = renpy.random.randint(1,2)
     $ d4 = renpy.random.randint(1,4)
@@ -8,6 +9,7 @@ label combat_start:
     $ d20 = renpy.random.randint(1,20)
     $ d30 = renpy.random.randint(2,6)
 
+# the intro before the fight, start by showing the character and play music
 show hunter at right
 stop music fadeout 0.2
 play music "audio/combat.mp3" volume 0.5
@@ -31,16 +33,16 @@ while player_hp > 0:
     $ random = d4
     menu:
         "Light Attack":
-            $ player_attack_value = 3
+            $ player_attack_value = 5
             $ enemy_hp -= player_attack_value
             "The enemy took [player_attack_value] damage and now at [enemy_hp]"
         "Heavy Attack":
             if random == 1:
-                $ player_attack_value = 3
+                $ player_attack_value = 8
                 $ enemy_hp -= player_attack_value
                 "The enemy took [player_attack_value] damage and now at [enemy_hp]"
             elif random == 2:
-                $ player_attack_value = 4
+                $ player_attack_value = 7
                 $ enemy_hp -= player_attack_value
                 "The enemy took [player_attack_value] damage and now at [enemy_hp]"
             elif random == 3:
@@ -53,7 +55,7 @@ while player_hp > 0:
            
 
 
-
+    #enemy turn and what will happen when player win
     if player_hp >= 1:
         $ player_hp -= 3
         "Enemy hit player for [3] damage and now you have [player_hp]"
@@ -61,7 +63,7 @@ while player_hp > 0:
         jump scene_2
         
         
-
+    #fight end when player die
     if player_hp <= 0:
         stop music fadeout 0.2
         show black 

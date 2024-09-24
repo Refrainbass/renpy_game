@@ -11,7 +11,7 @@ label combat_warm:
             g "Time to fight"
             m "Wait wait wait."
             jump combat_2
-
+#start of combat
 
 
 label scene_3:

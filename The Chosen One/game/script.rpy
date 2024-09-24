@@ -2,18 +2,18 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define config.name = _('The Chosen One')
+define config.name = _('The Chosen One') #game name and version 
 define gui.show_name = True
 define config.version = "1.3"
 define gui.about = _("Created by Setsu.S")
-
+#music
 define config.main_menu_music = "audio/mainland.mp3"
 define config.game_menu_music = "audio/mainland.mp3"
 define config.main_menu_music_fadein = 0.5
 
 
 
-
+#images
 define m = Character("Me", color="#0000FF")
 define parent = Character("Sister", color="#FFFF00")
 define h = Character("Hunter", color="#028A0F")

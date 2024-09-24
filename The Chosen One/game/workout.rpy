@@ -1,5 +1,5 @@
 label workout:
-
+#todomax is the number of exercises they need to do
     $ todomax = 30
     $ todo = todomax
    
@@ -7,7 +7,7 @@ label workout:
    
    
    
-   
+    #when they click on option the todo number will decrease 1
     while todo >= 0:
         menu:
             "Push up":

@@ -1,5 +1,5 @@
 label combat_2:
-
+    #random values
     label dice_roll_2:
     $ d2 = renpy.random.randint(1,2)
     $ d4 = renpy.random.randint(1,4)
@@ -8,6 +8,7 @@ label combat_2:
     $ d20 = renpy.random.randint(1,20)
     $ d30 = renpy.random.randint(2,6)
 
+#show characters and play combat music
 show giga at right
 stop music fadeout 0.2
 play music "audio/combat.mp3" volume 0.5
@@ -45,7 +46,7 @@ while player_hp > 0:
             "Heal":
                     jump heal
 
-  
+    # end of the fight
     if player_hp >= 1:
         $ player_hp -= 25
         "Enemy hit player for 25 damage and now you have [player_hp]"
@@ -53,7 +54,7 @@ while player_hp > 0:
         jump won_giga
         
         
-
+    #bad end 
     if player_hp <= 0:
         stop music fadeout 0.2
         show black 
@@ -62,7 +63,7 @@ while player_hp > 0:
         "You could have made better dicision to avoid this"
         "Ending 2: Death"
         return
-
+#player can heal when they are low health
 label heal:
         menu:
             "Push up":

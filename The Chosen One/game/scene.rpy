@@ -7,6 +7,7 @@ label forest_1:
     m "Hold up"
     "The hunter clearly didn't care and started pulling out her sword"
     jump combat_start
+    #start of the fight
 
 label scene_2:
     show bg forest
@@ -14,6 +15,7 @@ label scene_2:
     stop music fadeout 0.2
     play music "audio/mainland.mp3" volume 0.5
     h "Who even are you? Why you are so strong"
+    #the end of the fight and story continue
     
     menu:
         "Tell the truth":
@@ -25,19 +27,19 @@ label scene_2:
             m "I got lost in the forest when I was hunting."
             h "Getting lost? In this kind of time? it can't be true"
             "Proceed to pull out her sword"
-            jump ending_3
+            jump ending_3   
 
     h "What do you mean by that?"
     "She stopped and think for a while..."
     "..."
     "..."
-    h "Whatever, it doesn't matter now."
-    h "I can guide you to the nearby town"
-    m "Who are you?"
-    h "We have no names."
-    m "I just call you hunter then, you look like a hunter."
-    h "Anything is fine"
-    h "Do you want to come along?"
+    m: "Whatever. It’s not like it matters now."
+    h: "I know the way to the town."
+    m: "Who even are you?"
+    h: "Names don’t mean anything here."
+    m: "Alright... Hunter. You look like one."
+    h: "Call me what you want."
+    h: "So, are you coming, or staying to die?"
     
     menu:
         "Yes":
@@ -52,11 +54,11 @@ label scene_2:
     play music "audio/sonder.mp3" volume 0.5 
     h "Are you new to here?"
     m "Yes, as I said I got sent here for no reason."
-    m "At least I don't remember why"
-    "She stayed slicene for quite a while"
+    m "At least I don't remember why."
+    "She stayed silence for quite a while."
     "After a while , she said"
     h "Do you have any question for me?"
-
+#loop menu for player to understand information
     menu loop_1:
         "What happened just before I got here":
             h "Umm, it is hard to explain"
@@ -121,7 +123,7 @@ label scene_2:
         "You grab the pen on the table"
         show bg note with dissolve
         "And start writing down what you have heard and experienced"
-        menu:
+        menu: #different options will show different grahpic
             "About this world":
                 jump notes1
             "About elf":

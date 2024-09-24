@@ -1,5 +1,5 @@
 label combat_4:
-    
+    #random values
     label dice_roll4:
     $ d2 = renpy.random.randint(1,2)
     $ d4 = renpy.random.randint(1,4)
@@ -7,7 +7,7 @@ label combat_4:
     $ d10 = renpy.random.randint(1,10)
     $ d20 = renpy.random.randint(1,20)
     $ d30 = renpy.random.randint(2,6)
-
+#play battle music
 stop music fadeout 0.2
 play music "audio/combat.mp3" volume 0.3
 
@@ -57,7 +57,7 @@ while player_hp > 0:
                         $ player_hp -= 4
                         "Took 4 damage for attacking too hard!"
             
-                
+            # Player can select Giga to fight      
         "Giga":
             menu:
                 "Skull crushers":
@@ -95,7 +95,7 @@ while player_hp > 0:
        
            
 
-
+    #when player have health, enemy will hit them for different damage
     if player_hp >= 1:
         if random4 == 1:
             $ player_hp -= 50
@@ -114,7 +114,7 @@ while player_hp > 0:
 
 
     
-        
+        #the gif animation of ame
     image smol_ame:
         "smol_ame/out-transparent-35-0.png"
         pause 0.1
@@ -155,7 +155,7 @@ while player_hp > 0:
         "smol_ame/out-transparent-35-18.png"
         pause 0.1
         repeat
-
+    #dead end
     if player_hp <= 0:
         stop music fadeout 0.2
         show black 
@@ -166,7 +166,7 @@ while player_hp > 0:
         return
 
     
-    
+    #when enemy hit 8700 hp ame will show up
     if enemy_hp <= 8700:
         jump smol_ameroll
 
