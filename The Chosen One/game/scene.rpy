@@ -33,13 +33,13 @@ label scene_2:
     "She stopped and think for a while..."
     "..."
     "..."
-    m: "Whatever. It’s not like it matters now."
-    h: "I know the way to the town."
-    m: "Who even are you?"
-    h: "Names don’t mean anything here."
-    m: "Alright... Hunter. You look like one."
-    h: "Call me what you want."
-    h: "So, are you coming, or staying to die?"
+    m "Whatever. It’s not like it matters now."
+    h "I know the way to the town."
+    m "Who even are you?"
+    h "Names don’t mean anything here."
+    m "Alright... Hunter. You look like one."
+    h "Call me what you want."
+    h "So, are you coming, or staying to die?"
     
     menu:
         "Yes":

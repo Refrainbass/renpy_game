@@ -2,13 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/combat4.rpy", line 191: end of line expected.
-    hide smol_ame with moveoutleft 0.9
-                                   ^
+File "game/scene.rpy", line 36: expected statement.
+    m: "Whatever. It’s not like it matters now."
+     ^
 
-File "game/combat4.rpy", line 194: end of line expected.
-    hide smolgiga with moveouttop 0.6
-                                  ^
+File "game/scene.rpy", line 37: expected statement.
+    h: "I know the way to the town."
+     ^
+
+File "game/scene.rpy", line 38: expected statement.
+    m: "Who even are you?"
+     ^
+
+File "game/scene.rpy", line 39: expected statement.
+    h: "Names don’t mean anything here."
+     ^
+
+File "game/scene.rpy", line 40: expected statement.
+    m: "Alright... Hunter. You look like one."
+     ^
+
+File "game/scene.rpy", line 41: expected statement.
+    h: "Call me what you want."
+     ^
+
+File "game/scene.rpy", line 42: expected statement.
+    h: "So, are you coming, or staying to die?"
+     ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Aug 16 13:01:29 2024
+Thu Sep 26 11:39:18 2024
